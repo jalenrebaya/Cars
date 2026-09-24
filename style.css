@@ -802,3 +802,102 @@ footer p {
     .copyright { text-align: left; }
     .assistant-message { display: none; }
 }
+
+/* CAR DETAILS MODAL */
+
+.car-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.car-modal.active {
+    display: flex;
+}
+
+.car-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    background: #111;
+    border: 1px solid #444;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.car-modal-content h2 {
+    margin: 10px 0;
+    font-size: 32px;
+}
+
+.car-modal-content > p {
+    margin-bottom: 25px;
+    opacity: 0.7;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.modal-details div {
+    padding: 15px 5px;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.modal-details strong {
+    display: block;
+    font-size: 18px;
+}
+
+.modal-details span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.modal-price {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.modal-reserve {
+    border: none;
+    cursor: pointer;
+}
+
+.details-btn {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: 1px solid #555;
+    background: transparent;
+    color: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.details-btn:hover {
+    background: #333;
+}

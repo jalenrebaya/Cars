@@ -78,3 +78,74 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// CAR DETAILS MODAL
+
+const carModal = document.getElementById("car-modal");
+const modalClose = document.getElementById("modal-close");
+
+const modalCarName = document.getElementById("modal-car-name");
+const modalCarType = document.getElementById("modal-car-type");
+const modalHp = document.getElementById("modal-hp");
+const modalSpeed = document.getElementById("modal-speed");
+const modalRange = document.getElementById("modal-range");
+const modalPrice = document.getElementById("modal-price");
+
+const carDetails = {
+    "Apex GT-X": {
+        type: "Autonomous Supercar",
+        hp: "1020 HP",
+        speed: "1.9s",
+        range: "420 Mi",
+        price: "$299 / day"
+    },
+
+    "Terra Cyber": {
+        type: "All-Terrain Rover",
+        hp: "Dual Motor",
+        speed: "Armored Hull",
+        range: "500 Mi",
+        price: "$349 / day"
+    },
+
+    "Vortex E-1": {
+        type: "Urban Commuter",
+        hp: "Solar Cell",
+        speed: "AI Autopilot",
+        range: "350 Mi",
+        price: "$199 / day"
+    }
+};
+
+
+// Open modal when Details button is clicked
+document.querySelectorAll(".details-btn").forEach(button => {
+    button.addEventListener("click", () => {
+
+        const carName = button.dataset.car;
+        const car = carDetails[carName];
+
+        modalCarName.textContent = carName;
+        modalCarType.textContent = car.type;
+        modalHp.textContent = car.hp;
+        modalSpeed.textContent = car.speed;
+        modalRange.textContent = car.range;
+        modalPrice.textContent = car.price;
+
+        carModal.classList.add("active");
+    });
+});
+
+
+// Close modal
+modalClose.addEventListener("click", () => {
+    carModal.classList.remove("active");
+});
+
+
+// Close modal when clicking outside
+carModal.addEventListener("click", (event) => {
+    if (event.target === carModal) {
+        carModal.classList.remove("active");
+    }
+});

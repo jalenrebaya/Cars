@@ -84,6 +84,7 @@
                     </div>
                     <div class="car-bottom">
                         <strong>$299 / day</strong>
+                        <button class="details-btn" data-car="Apex GT-X">Details</button>
                         <button class="reserve-btn" data-car="Apex GT-X">Reserve</button>
                     </div>
                 </div>
@@ -105,6 +106,7 @@
                     </div>
                     <div class="car-bottom">
                         <strong>$349 / day</strong>
+                        <button class="details-btn" data-car="Terra Cyber">Details</button>
                         <button class="reserve-btn" data-car="Terra Cyber">Reserve</button>
                     </div>
                 </div>
@@ -126,6 +128,7 @@
                     </div>
                     <div class="car-bottom">
                         <strong>$199 / day</strong>
+                        <button class="details-btn" data-car="Vortex E-1">Details</button>
                         <button class="reserve-btn" data-car="Vortex E-1">Reserve</button>
                     </div>
                 </div>
@@ -218,6 +221,44 @@
             <p>All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- CAR DETAILS MODAL -->
+<div class="car-modal" id="car-modal">
+    <div class="car-modal-content">
+        <button class="modal-close" id="modal-close">&times;</button>
+
+        <span class="small-title">VEHICLE DETAILS</span>
+
+        <h2 id="modal-car-name">Apex GT-X</h2>
+
+        <p id="modal-car-type">Autonomous Supercar</p>
+
+        <div class="modal-details">
+            <div>
+                <strong id="modal-hp">1020 HP</strong>
+                <span>Power</span>
+            </div>
+
+            <div>
+                <strong id="modal-speed">1.9s</strong>
+                <span>0-60 MPH</span>
+            </div>
+
+            <div>
+                <strong id="modal-range">420 Mi</strong>
+                <span>Range</span>
+            </div>
+        </div>
+
+        <div class="modal-price">
+            <strong id="modal-price">$299 / day</strong>
+        </div>
+
+        <button class="btn primary modal-reserve" id="modal-reserve">
+            Reserve Vehicle
+        </button>
+    </div>
+</div>
 
     <!-- FLOATING ASSISTANT -->
     <div class="assistant">
