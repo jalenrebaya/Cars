@@ -37,9 +37,9 @@ Cars/
 ## Contributors
 
 * Jallyn Ribaya
-* Contributor 2
-* Contributor 3
-* Contributor 4
+* Kimi Gaerlan
+* Lhoredel Dollentas
+* Felix Almero
 
 ## Project
 
