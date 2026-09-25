@@ -24,4 +24,4 @@ The branches represent development stages. A branch is a Git history pointer, no
 
 See the provided instructions in the chat before merging: do not merge branches that contain no distinct work, and resolve conflicts if Git reports any.
 
-Cars project contribution by Kimi.
+Cars project contribution by Kimi
