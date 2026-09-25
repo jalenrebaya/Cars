@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -233,65 +233,28 @@
                 <button>Details</button>
             </div>
 
-            <div class="service-card">
-                <div class="service-icon">⚡</div>
-                <h3>Quantum Charge</h3>
-                <p>Ultra-fast charging hubs capable of 80% charge in under 5 minutes.</p>
-                <button>Details</button>
-            </div>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-            <div class="service-card">
-                <div class="service-icon">🛡️</div>
-                <h3>Cyber Security</h3>
-                <p>Military-grade encrypted wireless protocol securing all drive networks.</p>
-                <button>Details</button>
-            </div>
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-            <div class="service-card">
-                <div class="service-icon">🤖</div>
-                <h3>AI Maintenance</h3>
-                <p>Predictive hardware diagnostic algorithms scanning every millisecond.</p>
-                <button>Details</button>
-            </div>
-        </div>
-    </section>
+    <!-- React -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 
-    <!-- ABOUT SECTION -->
-    <section class="about-section" id="about">
-        <div class="about-content">
-            <span class="small-title">OUR VISION</span>
-            <h2>REDEFINING AUTOMOTIVE INTELLIGENCE</h2>
-            <p>AUTOSPOT combines advanced neural networks, lightweight carbon metamaterials, and zero-emission powerplants into an unprecedented driving system.</p>
-            <p>Step inside a vehicle that continuously learns your preferences and adapts to any terrain instantly.</p>
-        </div>
+    <!-- Babel enables JSX directly in script.js -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-        <div class="about-box">
-            <div class="big-icon">🌐</div>
-            <h3>GLOBAL NETWORK</h3>
-            <p>Connected across 120+ cyber cities worldwide.</p>
-        </div>
-    </section>
+    <!-- Website stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <!-- CONTACT -->
-    <section class="contact-section" id="contact">
-        <div class="section-heading">
-            <h2>ESTABLISH UPLINK</h2>
-            <p>Send a message directly to our neural dispatch operations.</p>
-        </div>
+<body>
 
-        <form class="contact-form" id="uplink-form">
-            <input type="text" id="user-name" placeholder="Callsign / Name" required>
-            <input type="email" id="user-email" placeholder="Neural ID / Email" required>
-            <textarea id="user-msg" rows="5" placeholder="Transmission details..." required></textarea>
-            <button type="submit" class="btn primary">Send Transmission</button>
-        </form>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div>
-            <div class="logo" style="margin-bottom: 10px;">AUTOSPOT</div>
-            <p>Next-generation cybernetic automotive platform.</p>
+    <div id="root">
+        <div class="loading-screen">
+            <div class="loading-orb"></div>
+            <p>INITIALIZING AUTOSPOT SYSTEM...</p>
         </div>
         <div>
             <h3>System Status</h3>
@@ -349,6 +312,8 @@
         <div class="avatar" id="bot-avatar">🤖</div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- React application -->
+    <script type="text/babel" data-presets="env,react" src="script.js"></script>
+
 </body>
 </html>
